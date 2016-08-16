@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>School</title>
+  
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css" />
+  	<link rel="script" href="stylesheets/application.js" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script>  	
+  	</script>
+  	  	
+  	<%= link_to "HOME", root_path, class: 'btn btn-success'%>
+  </head>
+  
+  <body>
+    <%= yield %>
+  </body>
+</html>

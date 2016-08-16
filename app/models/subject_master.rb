@@ -1,0 +1,2 @@
+class SubjectMaster < ApplicationRecord
+end

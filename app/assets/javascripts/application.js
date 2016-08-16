@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+/*$(document).ready(function() 
+{
+	$('my-link').click(function () 
+	{
+  		alert('Hooray!');
+  		event.stop(); // Prevent link from following through to its given href
+	});
+});*/
