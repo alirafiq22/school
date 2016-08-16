@@ -10,7 +10,18 @@
       </ul>
     </div>
   <% end %>
-
+  <div id="field">
+  	<%= f.label "Roll No" %><br>
+    <%= f.text_field :roll_no %>
+  </div>
+  <div id="field">
+  	<%= f.label "Name" %><br>
+    <%= f.text_field :name %>
+  </div>  
+  <div id="field">
+  	<%= f.label "Age" %><br>
+    <%= f.text_field :age %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -60,15 +60,16 @@ class StudentMastersController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_student_master
       @student_master = StudentMaster.find(params[:id])
     end
-
+    
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_master_params
-      params.fetch(:student_master, {})
+      params.require(:student_master).permit(:roll_no, :name, :age)
+      #params.fetch(:student_master, {})
     end
 end

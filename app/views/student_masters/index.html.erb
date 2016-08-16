@@ -10,11 +10,14 @@
   </thead>
 
   <tbody>
-    <% @student_masters.each do |student_master| %>
+    <% @student_masters.each do |sm| %>
       <tr>
-        <td><%= link_to 'Show', student_master %></td>
-        <td><%= link_to 'Edit', edit_student_master_path(student_master) %></td>
-        <td><%= link_to 'Destroy', student_master, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      	<td><%= sm.roll_no %> &nbsp;</td>
+        <td><%= sm.name %> &nbsp;</td>
+        <td><%= sm.age %> &nbsp;</td>
+        <td><%= link_to 'Show', sm %></td>
+        <td><%= link_to 'Edit', edit_student_master_path(sm) %></td>
+        <td><%= link_to 'Destroy', sm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Student Master', new_student_master_path %>
+<%= link_to 'New Student', new_student_master_path %>
